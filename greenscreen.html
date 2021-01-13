@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>GreenScreen</title>
+<body>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<canvas id="can1">
+<script src="greenscreen.js"></script>
+<style>
+
+canvas{
+  height: 200px;
+  width: auto;
+  background-color: #EEE;
+  border: 2px solid lightblue;
+}
+
+body{
+background-color: #999;
+}
+
+</style>
+
+  </canvas>
+<canvas id="can2">
+  </canvas>
+<div><input id="foreground" type="file" accept="image/*" multiple="false" onchange="load1()">
+
+<input id="background" type="file" accept="image/*"
+multiple="false" onchange="load2()">
+  </div>
+<input id="greens" type="button" value="Crear imagen" onclick="greenscreen()">
+  </body>
+</html>
